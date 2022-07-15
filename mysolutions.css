@@ -49,13 +49,12 @@
 /* esercizio 5 */
 
 .ex-5-square:hover {
-    height: 90px;
-    width: 90px;
+    transform: scale(1.4);
+
 }
 
 .ex-5-square:active {
-    height: 30px;
-    width: 30px;
+    transform: scale(0.4);
 }
 
 
@@ -103,7 +102,7 @@
 .ex-9-img:hover {
     filter: sepia(70%);
     border-radius: 20px;
-    width: 600px;
+    transform: scale(1.4);
 }
 
 .ex-9-img {
@@ -132,38 +131,66 @@
 
 /* esercizio 11 */
 
-
 .ex-11-icon:hover {
-    animation: rotating2 1s linear;
-
+    animation: rotating2 2s;
 }
+
+
 
 @keyframes rotating2 {
-    from {
+    0% {
         transform: rotate(0deg);
+
+    }
+
+    80% {
+        transform: rotate(270deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+
+    }
+
+}
+
+
+
+/* esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: vaidestra 1s linear alternate 2;
+}
+
+
+@keyframes vaidestra {
+    from {
+        transform: translateX(0);
     }
 
     to {
-        transform: rotate(360deg);
+        transform: translateX(115px);
     }
 }
 
 
 
-
-.ex-11-icon {
-
-    animation: rotating3 1s linear;
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: vaisinistra 1s linear alternate 2;
 }
 
 
-
-@keyframes rotating3 {
+@keyframes vaisinistra {
     from {
-        transform: rotate(0deg);
+        transform: translateX(0);
     }
 
     to {
-        transform: rotate(-360deg);
+        transform: translateX(-95px);
     }
 }
+
+
+
+/* esercizio 13 */
