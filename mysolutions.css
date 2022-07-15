@@ -77,9 +77,93 @@
 
 .ex-7-img:hover {
     filter: sepia(50%);
-    border-radius: 20px;
 }
 
 .ex-7-img {
     transition: 2s;
+}
+
+
+
+/* esercizio 8 */
+
+.ex-8-img:hover {
+    filter: sepia(80%);
+    border-radius: 20px;
+}
+
+.ex-8-img {
+    transition: 2s;
+}
+
+
+
+/* esercizio 9  */
+
+.ex-9-img:hover {
+    filter: sepia(70%);
+    border-radius: 20px;
+    width: 600px;
+}
+
+.ex-9-img {
+    transition: 2s;
+}
+
+
+
+/* esercizio 10 */
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.ex-10-icon {
+    animation: rotating 1s linear infinite;
+}
+
+
+
+/* esercizio 11 */
+
+
+.ex-11-icon:hover {
+    animation: rotating2 1s linear;
+
+}
+
+@keyframes rotating2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.ex-11-icon {
+
+    animation: rotating3 1s linear;
+}
+
+
+
+@keyframes rotating3 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
